@@ -18,16 +18,16 @@ class Book extends Model
     
     public function author()
     {
-        return $this->belongsto(\App\Models\Author::class);
+        return $this->belongsTo(\App\Models\Author::class);
     }
 
     public function genre()
     {
-        return $this->belongsto(\App\Models\Genre::class);
+        return $this->belongsTo(\App\Models\Genre::class);
     }
 
     public function user()
     {
-        return $this->belongsto(\App\Models\User::class);
+        return $this->belongsTo(\App\Models\User::class);
     }
 }

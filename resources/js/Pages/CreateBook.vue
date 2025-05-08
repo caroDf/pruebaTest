@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue'
 import { Head, useForm } from '@inertiajs/vue3'
 
 defineProps({
@@ -48,8 +47,8 @@ const submit = () => {
     </form>
 
     <!-- Mostrar errores si los hay -->
-    <div v-if="form.hasErrors" class="text-red-500 mt-4">
+    <!-- <div v-if="form.hasErrors" class="text-red-500 mt-4">
       <div v-for="(message, key) in form.errors" :key="key">{{ message }}</div>
-    </div>
+    </div> -->
   </div>
 </template>
